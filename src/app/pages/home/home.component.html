@@ -1,24 +1,11 @@
-<div class="container">
-  <button mat-raised-button color="primary" (click)="showMessage('Success Message', 'success')">
-    Primary
-  </button>
-
-  <button mat-raised-button color="accent" (click)="showMessage('Warn Message', 'warn')">
-    Accent
-  </button>
-
-  <button mat-raised-button color="warn" (click)="showMessage('Wrong Message', 'wrong')">
-    Warn
-  </button>
-</div>
-
-
-<div id="htmlContent">
-  <!-- Your HTML content goes here -->
-  <h1>Hello, World!</h1>
-  <p>This is the content to be converted to an image.</p>
-  <img style="width: 200px; height: auto" src="/assets/images/01.jpg" alt="">
-</div>
-
-<button (click)="downloadImage()">Download Image</button>
-
+<ul>
+  <li>
+    <a routerLink="/">Home</a>
+  </li>
+  <li>
+    <a routerLink="/layout">Layout</a>
+  </li>
+  <li>
+    <a routerLink="/material">Material</a>
+  </li>
+</ul>
