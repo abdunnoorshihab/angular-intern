@@ -2,7 +2,7 @@ export const environment = {
   production: false,
   name: 'Softlabit QA',
   domain: 'qa.softlabit.com',
-  apiBaseLink: 'http://localhost:3000',
+  apiBaseLink: 'https://api.heriken.co',
   ftpBaseLink: 'http://localhost:3000',
   appBaseUrl: '/',
   adminBaseUrl: 'admin',

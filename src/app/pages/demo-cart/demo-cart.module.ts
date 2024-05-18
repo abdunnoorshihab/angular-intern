@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatCardModule} from '@angular/material/card';
 import {ProductCardModule} from '../../shared/components/product-card/product-card.module';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {ProductCardModule} from '../../shared/components/product-card/product-ca
     MatButtonModule,
     MatBadgeModule,
     MatCardModule,
-    ProductCardModule
+    ProductCardModule,
+    MatProgressSpinnerModule
   ]
 })
 export class DemoCartModule { }
