@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'demo-cart',
     loadChildren: () => import('./pages/demo-cart/demo-cart.module').then(m => m.DemoCartModule)
+  },
+  {
+    path: 'pipe-view',
+    loadChildren: () => import('./pages/pipe-view/pipe-view.module').then(m => m.PipeViewModule)
   }
 ];
 

@@ -1,0 +1,11 @@
+
+<div class="container">
+
+  @for(data of users; track data._id) {
+    <div class="item">
+      <h2>Name: {{data.name}}</h2>
+      <p>Role: {{data.role | roleView : 100 : true}}</p>
+    </div>
+  }
+
+</div>
