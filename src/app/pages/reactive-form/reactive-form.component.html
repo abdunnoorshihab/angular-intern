@@ -1,0 +1,36 @@
+<form class="form-container" [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input formControlName="name" matInput placeholder="Enter your name">
+    <!--    <mat-error>This field is required</mat-error>-->
+    <mat-hint style="color: orangered" *ngIf="dataForm.get('name').invalid && dataForm.get('name').touched">Enter your
+      full name
+    </mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Age</mat-label>
+    <input formControlName="age" matInput placeholder="Enter your age" type="number">
+    <mat-error>This field is required</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>About You</mat-label>
+    <textarea formControlName="about" matInput placeholder="Write something about you"></textarea>
+  </mat-form-field>
+
+  <button type="submit" mat-raised-button color="primary">Submit</button>
+</form>
+
+
+<hr>
+<div>
+  <mat-form-field appearance="outline">
+    <mat-label>About You</mat-label>
+    <textarea [(ngModel)]="aboutUs" matInput placeholder="Write something about you"></textarea>
+  </mat-form-field>
+
+  <div class="view">
+    {{aboutUs}}
+  </div>
+</div>

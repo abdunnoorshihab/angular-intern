@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'pipe-view',
     loadChildren: () => import('./pages/pipe-view/pipe-view.module').then(m => m.PipeViewModule)
+  },
+  {
+    path: 'reactive-form',
+    loadChildren: () => import('./pages/reactive-form/reactive-form.module').then(m => m.ReactiveFormModule)
   }
 ];
 
