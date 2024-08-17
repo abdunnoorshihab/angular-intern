@@ -10,6 +10,9 @@ export class ReactiveFormComponent implements OnInit {
   dataForm: FormGroup;
   aboutUs: string = null;
 
+  title: string = null;
+
+
   // Inject
   private readonly fb = inject(FormBuilder)
 
@@ -17,6 +20,14 @@ export class ReactiveFormComponent implements OnInit {
     // Init
     this.initForm();
 
+    setTimeout(() => {
+      this.updateTitle();
+    }, 1000)
+
+  }
+
+  updateTitle() {
+    this.title = 'Md Sazib'
   }
 
 
