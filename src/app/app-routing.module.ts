@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'reactive-form',
     loadChildren: () => import('./pages/reactive-form/reactive-form.module').then(m => m.ReactiveFormModule)
+  },
+  {
+    path: 'my-service',
+    loadChildren: () => import('./pages/my-service/my-service.module').then(m => m.MyServiceModule)
   }
 ];
 

@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {AuthUserInterceptor} from './auth-interceptor/auth-user.interceptor';
+import {ToolbarComponent} from './shared/components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {AuthUserInterceptor} from './auth-interceptor/auth-user.interceptor';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ToolbarComponent,
   ],
   providers: [
     Title,
